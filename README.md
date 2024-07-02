@@ -39,12 +39,13 @@ nano config.py
 ```
 - (Optional) You can change variable `USDT_ORDER_SIZE`: The size of each USDT order placed by the bot. Default value is 20.
 
-Then fill in your Binance API and SECRET keys with `config.example.py` located in balance_check folder, and rename it to `config.py` as well.
+Then fill your Binance API and SECRET keys in `config.example.py` located in balance_check folder, and rename it to `config.py` as well.
 
 6. Start the Redis server:
 ```bash
 redis-server
 ```
+Alternatively, you can use any cloud Redis solution instead.
 7. Run the `get_all_coins.py` script to fetch all available trading pairs on Binance and store them in Redis:
 ```bash
 python3 get_all_coins.py
