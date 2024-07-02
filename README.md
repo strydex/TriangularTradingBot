@@ -38,7 +38,8 @@ cp config.example.py config.py
 nano config.py
 ```
 - (Optional) You can change variable `USDT_ORDER_SIZE`: The size of each USDT order placed by the bot. Default value is 20.
-Then do the same thing filling your Binance API and SECRET keys with `config.example.py` located in balance_check folder.
+
+Then fill in your Binance API and SECRET keys with `config.example.py` located in balance_check folder, and rename it to `config.py` as well.
 
 6. Start the Redis server:
 ```bash
