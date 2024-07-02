@@ -31,7 +31,7 @@ source env/bin/activate
 ```bash
 pip3 install -r requirements.txt
 ```
-5. Copy the `config.example.py` file to `config.py` and edit it with your Binance API key and secret key, as well as your Telegram chat_id (if you want to receive notifications about trades):
+5. Rename the `config.example.py` file to `config.py` and edit it with your Binance API key and secret key, as well as your Telegram chat_id (if you want to receive notifications about trades):
 ```bash
 cp config.example.py config.py
 nano config.py
