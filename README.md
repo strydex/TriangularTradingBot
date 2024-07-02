@@ -36,7 +36,7 @@ pip3 install -r requirements.txt
 cp config.example.py config.py
 nano config.py
 ```
-Then do the same thing with config.example.py located in balance_check folder.
+Then do the same thing with `config.example.py` located in balance_check folder.
 
 6. Start the Redis server:
 ```bash
