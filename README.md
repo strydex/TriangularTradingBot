@@ -9,7 +9,8 @@ Requirements
 * Python 3.7 or higher
 * Redis server
 * Binance API key and Secret key
-* Telegram Bot token
+* Telegram Bot tokens
+* Telegram `chat_id`
 * Additional lib requirements are listed in requirements.txt and being installed automatically
 
 Installation
@@ -66,6 +67,24 @@ sudo systemctl start binance_parser_bot.service
 sudo systemctl start depth_check.service
 sudo systemctl start search_for_perspective.service
 ```
+Note on Telegram Bot Tokens
+--------------------------
+
+The `depth_check.py` script uses a list of bot tokens and selects a different bot for each message sent, in a round-robin fashion. This is to avoid exceeding the rate limit of a single bot. It is recommended to create multiple Telegram bots and add their tokens to the `bot_tokens_list` variable in `depth_check.py`.
+
+To create a Telegram bots and get its tokens, follow these steps:
+
+1. Open Telegram and search for BotFather.
+2. Start a chat with BotFather and send the `/newbot` command.
+3. Follow the instructions to create a new bot and get its token.
+4. Repeat the process to create multiple bots.
+
+After creating the bots, update the `bot_tokens_list` variable in `depth_check.py` with their tokens:
+```python
+bot_tokens_list = ['TOKEN_1', 'TOKEN_2', 'TOKEN_3', 'TOKEN_4', 'TOKEN_5', 'TOKEN_6', 'TOKEN_7', 'TOKEN_8']
+```
+Replace `TOKEN_1`, `TOKEN_2`, etc. with your actual bot tokens. You also can use only 1 bot in a list.
+
 Usage
 -----
 
