@@ -45,7 +45,6 @@ Then fill your Binance API and SECRET keys in `config.example.py` located in bal
 ```bash
 redis-server
 ```
-Alternatively, you can use any cloud Redis solution instead.
 
 7. Run the `get_all_coins.py` script to fetch all available trading pairs on Binance and store them in Redis:
 ```bash
