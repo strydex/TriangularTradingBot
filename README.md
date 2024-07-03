@@ -93,7 +93,7 @@ Replace `TOKEN_1`, `TOKEN_2`, etc. with your actual bot tokens. You also can use
 Usage
 -----
 
-Once the bot is running, it will continuously monitor the order book depth for all available trading pairs on Binance and calculate potential profits from arbitrage trades. When a profitable opportunity is found, the bot will execute the trades and send a notification to your Telegram group (needs to be configured).
+Once the bot is running, it will continuously monitor the order book depth for all available trading pairs on Binance and calculate potential profits from arbitrage trades. When a profitable opportunity is found, the bot will execute the trades and send a notification to your Telegram group.
 
 Contributing
 ------------
