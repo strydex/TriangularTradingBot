@@ -11,7 +11,7 @@ Requirements
 * Binance API key and Secret key
 * Telegram Bot tokens
 * Telegram `chat_id`
-* Additional lib requirements are listed in requirements.txt and being installed automatically
+* A little bit of patience :)
 
 Installation
 ------------
