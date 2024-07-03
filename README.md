@@ -58,7 +58,7 @@ python3 depth_check.py
 ```bash
 python3 balance_check.py
 ```
-10. (Optional) Set up the systemd services to run the bot as a background service on a Linux system (or you can use pm2):
+10. (Optional) Set up the systemd services to run the bot as a background service on a Linux system:
 ```bash
 sudo cp binance_parser_bot.service /etc/systemd/system/
 sudo cp depth_check.service /etc/systemd/system/
@@ -70,6 +70,8 @@ sudo systemctl start binance_parser_bot.service
 sudo systemctl start depth_check.service
 sudo systemctl start search_for_perspective.service
 ```
+Alternitavely, you can use PM2 instead.
+
 Note on Telegram Bot Tokens
 --------------------------
 
